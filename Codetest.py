@@ -51,9 +51,6 @@ def make_wordcloud(dataset, column_name, colour):
             col = 50
         elif colour == "green":
             col = 110
-        else:
-            print("{} is not an available colour... Helaas pindakaas!".format(colour.capitalize()))
-            exit()
         return("hsl({},100%%, %d%%)".format(col) % np.random.randint(20,90))
     stopwords = set(STOPWORDS)
     data = dataset
