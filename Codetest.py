@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 
-print("""Welcome to the Pathytje Met Wordcloud Generator!
+print("""Welcome to the Pythatje Met Wordcloud Generator!
 This program creates a wordlcoud with the most used strings from a column in your data file.
 Please have your dataset ready in the working directory of this python file.
 Next, follow the instructions and let the magic happen!
@@ -19,9 +19,9 @@ def datasetinput():
         result = "Oops! {} does not exist in your directory! Try again!".format(dataset)
         print(result)
         datasetinput()
-    print("Dataset found, lets continue...")
     data = pd.read_csv(dataset)
     dataset = data
+    print("Dataset found, lets continue...")
 
 def column_nameinput():
     global column_name
@@ -73,6 +73,6 @@ datasetinput()
 column_nameinput()
 colourinput()
 make_wordcloud(dataset, column_name, colour)
-print("""Good job! Thank you for using the Pathytje Met Wordcloud Generator!
+print("""Good job! Thank you for using the Pythtje Met Wordcloud Generator!
 Written by Tom van Zantvliet, Maarten Molenaar and Sebastiaan Grosscurt.
 v1.0 as part of the LUC Programming Course""")
