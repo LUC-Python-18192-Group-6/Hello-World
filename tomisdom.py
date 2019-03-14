@@ -1,2 +1,0 @@
-sebas = 'kut'
-maarten = 'leuk!'

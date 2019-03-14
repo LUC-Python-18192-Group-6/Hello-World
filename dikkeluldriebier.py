@@ -1,2 +1,0 @@
-dikkeluldriebier = 'je moeder'
-
